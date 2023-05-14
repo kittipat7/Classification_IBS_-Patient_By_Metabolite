@@ -10,7 +10,7 @@
 - ในการศึกษานี้ใช้สาร Metabolite ที่สกัดจากอุจจาระ โดยตัวข้อมูลประกอบด้วย metabolite 601 ชนิด และ column ที่ระบุว่าเป็นผู้ป่วยหรือ กลุ่ม healthy controls รวม 602 columns
 และ มีผู้ป่วยโรคลำไส้แปรปรวน 229 คน กลุ่ม healthy controls 139 คน โดย data set ชุดนี้ไม่มี Missing values
 ## วิธีที่ใช้
-- โดยวิธีที่ใช้นั้นจะมีการทำ Feature selection ก่อนเข้า Classification Model
+- โดยวิธีที่ใช้นั้นจะมีการทำ Feature selection ก่อนเข้า Classification Model และวัดผลด้วย AUC Score
 ### Feature Selection
 - ในส่วนของการทำ Feature selection จะใช้ Recursive Feature Elimination with Cross-Validation(RFECV) เป็นการวนลูปเลือกฟีเจอร์ หรือกลุ่มของฟีเจอร์ แล้วทำการทดสอบการสร้างโมเด เพื่อหาว่า ฟีเจอร์ชุดใด ทำให้สามารถสร้างโมเดลที่มีประสิทธิภาพสูงสุดได้ จากนั้น จึงเลือกฟีเจอร์นั้นๆ เพื่อใช้งานต่อไป โดยหลักการทำงานในการเลือกฟีเจอร์ ก็คือ เริ่มต้นด้วยการใช้ฟีเจอร์ทั้งหมดก่อน และทำการ ตัดฟีเจอร์ที่มีความเกี่ยวข้องน้อยที่สุดออกไป เพื่อทำให้ขนาดของฟีเจอร์ลดลง จนกว่าจะได้มาซึ่งชุดของฟีเจอร์ที่เล็กที่สุดและ เนื่องจากข้อมูลที่ใช้มีสาร metabolite 601 ชนิด หรือ ตัวแปรอิสระ (X) เป็นNumeric และตัวแปรตาม (y) เป็น category จึงเลือกใช้ Linear discriminant analysis (LDA) เป็นตัว estimator และ วัด Coeficient ของ ตัวแปรอิสระ (X) แต่ละตัวที่ส่งผลต่อตัวแปรตาม (y)
 - และเนื่องจาก Recursive Feature Elimination with Cross-Validation(RFECV) เป็นวิธีการ เป็นการคัดเลือกฟีเจอร์ด้วยการสร้างโมเดล (classification model) ขึ้นมาจากเซตของฟีเจอร์ที่กำหนดไว้และวัดประสิทธิภาพการทำงานของโมเดล และเลือกเซตของฟีเจอร์ที่ทำให้โมเดลมีประสิทธิภาพมากที่สุดมาใช้งาน ซึ่งอาจจะไม่สามารถอธิบายได้ว่า Feature แต่ละตัวส่งผล ตัวแปรตาม (y) จริงหรือไม่ จึงเลือกใช้ ANOVA and the Bonferroni Correction ทำ Feature selection โดยทดสอบ  Feature แต่ละตัวเทียบกับ Recursive Feature Elimination with Cross-Validation(RFECV)
