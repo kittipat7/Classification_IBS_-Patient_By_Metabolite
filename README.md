@@ -17,6 +17,6 @@
 - One-way ANOVA and the Bonferroni Correction เนื่องจากต้องทำการเปรียบเทียบกันหลายครั้งในที่นี้มี สาร metabolite 601 ชนิด ซึ่งเสี่ยงกับการทำให้เกิด False Positive ได้ จึงป้องกันโดยใช้ Bonferroni ในการปรับค่า alpha รายคู่ 
 - ทดสอบค่าเฉลี่ยของ metabolite ที่ถูกเลือกระหว่าง ผู้ป่วย กับ กลุ่ม healthy controls ว่าต่างกันจริงหรือไม่ ด้วย t-test
 ### Classification Model
-- logistic regression
+- Logistic Regression
 - K- Nearest Neighbor (KNN)
 - Support Vector Machines (SVM) 
