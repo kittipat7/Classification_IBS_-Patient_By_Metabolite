@@ -25,6 +25,7 @@
 ผลลัพธ์จาก Recursive Feature Elimination with Cross-Validation(RFECV) ที่ใช้ Linear discriminant analysis (LDA) เป็นตัว estimator สามารถลดจำนวน metabolite จาก 601 ชนิดเหลือเพียง 10 ชนิดเท่านั้น
 #### Logistic Regression
 ใช้ Feature ที่ถูกเลือกจาก RFECV กับ Logistic Regression
+
 AUC Score: 0.8662655279503106
 Classification Report:
               precision    recall  f1-score   support
