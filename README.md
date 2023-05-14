@@ -23,16 +23,14 @@
 ## ผลลัพธ์
 ### Feature Selection with Recursive Feature Elimination with Cross-Validation(RFECV) 
 ผลลัพธ์จาก Recursive Feature Elimination with Cross-Validation(RFECV) ที่ใช้ Linear discriminant analysis (LDA) เป็นตัว estimator สามารถลดจำนวน metabolite จาก 601 ชนิดเหลือเพียง 10 ชนิดเท่านั้น
+ได้แก่ 2-hydroxyglutarate, 2-isopropylmalate, gamma-glutamylleucine, glycine, glycylvaline, lactosyl-N-nervonoyl-sphingosine (d18:1/24:1)*, lactosyl-N-palmitoyl-sphingosine (d18:1/16:0), oleoyl ethanolamide, serine, xylose
 #### Logistic Regression
 ใช้ Feature ที่ถูกเลือกจาก RFECV กับ Logistic Regression
+![image](https://github.com/kittipat7/Classification_IBS_Patient_By_Metabolite/assets/97491541/7875ec71-a6e7-47bc-ad83-b986760fc948)
+#### K- Nearest Neighbor (KNN)
+ใช้ Feature ที่ถูกเลือกจาก RFECV กับ K- Nearest Neighbor (KNN)
+![image](https://github.com/kittipat7/Classification_IBS_Patient_By_Metabolite/assets/97491541/ab799a50-9b8b-4b07-87aa-42587e8a8d6f)
+#### Support Vector Machines (SVM)
+ใช้ Feature ที่ถูกเลือกจาก RFECV กับ Support Vector Machines (SVM)
+![image](https://github.com/kittipat7/Classification_IBS_Patient_By_Metabolite/assets/97491541/c79ba454-5122-4642-a5d4-79d553b7d643)
 
-AUC Score: 0.8662655279503106
-Classification Report:
-              precision    recall  f1-score   support
-
-     Control       0.73      0.71      0.72        56
-         IBS       0.83      0.84      0.83        92
-
-    accuracy                           0.79       148
-   macro avg       0.78      0.78      0.78       148
-weighted avg       0.79      0.79      0.79       148
