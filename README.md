@@ -19,4 +19,19 @@
 ### Classification Model
 - Logistic Regression
 - K- Nearest Neighbor (KNN)
-- Support Vector Machines (SVM) 
+- Support Vector Machines (SVM)
+## ผลลัพธ์
+### Feature Selection with Recursive Feature Elimination with Cross-Validation(RFECV) 
+ผลลัพธ์จาก Recursive Feature Elimination with Cross-Validation(RFECV) ที่ใช้ Linear discriminant analysis (LDA) เป็นตัว estimator สามารถลดจำนวน metabolite จาก 601 ชนิดเหลือเพียง 10 ชนิดเท่านั้น
+#### Logistic Regression
+ใช้ Feature ที่ถูกเลือกจาก RFECV กับ Logistic Regression
+AUC Score: 0.8662655279503106
+Classification Report:
+              precision    recall  f1-score   support
+
+     Control       0.73      0.71      0.72        56
+         IBS       0.83      0.84      0.83        92
+
+    accuracy                           0.79       148
+   macro avg       0.78      0.78      0.78       148
+weighted avg       0.79      0.79      0.79       148
