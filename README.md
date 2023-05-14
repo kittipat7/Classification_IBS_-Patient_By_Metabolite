@@ -58,8 +58,7 @@
 ![image](https://github.com/kittipat7/Classification_IBS_Patient_By_Metabolite/assets/97491541/c62ba09c-efbe-4e4d-8e5e-c7389b63a8d6)
 
 ### สรุปผล
-####   Feature Selection with Recursive Feature Elimination with Cross-Validation(RFECV) 
-- มีประสิทธืภาพในการลดจำนวน Feature ได้ดีกว่า One-Way ANOVA and the Bonferroni Correction แต่เมื่อนำ Feature ที่ถูกเลือกไปใช้กับ Classification Model โดยผลลัพธ์ที่ดีสุดคือ Logistic Regression AUC Score ที่ 0.8651009316770185 ซึ่งต่ำกว่า การใช้ Feature ที่เลือกโดย One-Way ANOVA and the Bonferroni Correction ที่ถูกเลือกไปใช้กับ Classification Model โดยผลลัพธ์ที่ดีสุดคือ K- Nearest Neighbor (KNN) AUC Score ที่ 0.8879076086956522
+- Feature Selection with Recursive Feature Elimination with Cross-Validation(RFECV) มีประสิทธืภาพในการลดจำนวน Feature ได้ดีกว่า One-Way ANOVA and the Bonferroni Correction แต่เมื่อนำ Feature ที่ถูกเลือกไปใช้กับ Classification Model โดยผลลัพธ์ที่ดีสุดคือ Logistic Regression AUC Score ที่ 0.8651009316770185 ซึ่งต่ำกว่า การใช้ Feature ที่เลือกโดย One-Way ANOVA and the Bonferroni Correction ที่ถูกเลือกไปใช้กับ Classification Model โดยผลลัพธ์ที่ดีสุดคือ K- Nearest Neighbor (KNN) AUC Score ที่ 0.8879076086956522
 ## Reference
 Lo Presti, Alessandra et al. (2023) Phylogenetic analysis of Prevotella copri from fecal and 	mucosal microbiota of IBS and IBD patients. Therapeutic advances in gastroenterology 	,16. 1-10.
 
