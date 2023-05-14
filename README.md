@@ -62,11 +62,18 @@
 - มีประสิทธืภาพในการลดจำนวน Feature ได้ดีกว่า One-Way ANOVA and the Bonferroni Correction แต่เมื่อนำ Feature ที่ถูกเลือกไปใช้กับ Classification Model โดยผลลัพธ์ที่ดีสุดคือ Logistic Regression AUC Score ที่ 0.8651009316770185 ซึ่งต่ำกว่า การใช้ Feature ที่เลือกโดย One-Way ANOVA and the Bonferroni Correction ที่ถูกเลือกไปใช้กับ Classification Model โดยผลลัพธ์ที่ดีสุดคือ K- Nearest Neighbor (KNN) AUC Score ที่ 0.8879076086956522
 ## Reference
 Lo Presti, Alessandra et al. (2023) Phylogenetic analysis of Prevotella copri from fecal and 	mucosal microbiota of IBS and IBD patients. Therapeutic advances in gastroenterology 	,16. 1-10.
+
 Canavan, C., West, J., & Card, T. (2014). The epidemiology of irritable bowel syndrome. Clinical 	epidemiology, 6, 71–80.
+
 Hussain et al. (2019). Classifying Cancer Patients Based on DNA Sequences Using Machine 	Learning. Journal of Medical Imaging and Health Informatics, 9. 436-443.
+
 Jacobs, J.P et al. (2023). Multi-omics profiles of the intestinal microbiome in irritable bowel 	syndrome and its bowel habit subtypes. Microbiome, 11, 5.
+
 Meesad, P., Wichian, S. N., Herwig, U., & Saengsiri, P. (2016). Classication Models Based-on 	Incremental Learning Algorithm and Feature Selection on Gene Expression Data. ECTI 	Transactions on Computer and Information Technology (ECTI-CIT), 6(1), 40–47.
+
 Xiao, L., Liu, Q., Luo, M., & Xiong, L. (2021). Gut Microbiota-Derived Metabolites in Irritable 	Bowel 	Syndrome. Frontiers in cellular and infection microbiology, 11, 729346. 
+
 อัจจิมา มณฑาพันธุ์. (2562). การเปรียบเทียบวิธีการคัดเลือกคุณลักษณะที่สำคัญในการปรับปรุงการพยากรณ์	มะเร็งเต้านม. Royal Thai Air Force Medical Gazette, 65(2), 49-55.
+
 นพ.สุริยา กีรติชนานนท์. (2561).  โรคลำไส้แปรปรวน: อาการ หลักการวินิจฉัย และแนวทางการรักษา. ค้นเมื่อ 	24  กุมภาพันธ์ 2023 จาก 	https://bangkokhatyai.com/uploaded/content/link_130916101751392.pdf
 
